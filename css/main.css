@@ -1,5 +1,5 @@
 .borders {
-    outline: 2px solid green;
+    outline: 1px solid black;
     background-color: red;
 }
 
@@ -31,7 +31,7 @@ body {
     color: #000;  
 }
 
-.wraper {
+.wrapper {
     background-color: #fff;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.33);
 }
@@ -99,6 +99,17 @@ ul {
     font-weight: bold;
     line-height: 60px;
     cursor: pointer;
+    outline: none;
+}
+
+.navigation-item a:hover,
+.navigation-item a:focus {
+    color: #81b3d2;
+}
+
+.navigation-item a:active {
+    color: #000;
+    opacity: 0.3;
 }
 
 .tagline-images {
@@ -247,6 +258,8 @@ ul {
     font-weight: bold;
     font-size: 21px;
     padding-top: 160px;
+    outline: none;
+    transition: 0.3s;
 }
 
 .services-list li:nth-child(1) a {
@@ -273,6 +286,14 @@ ul {
     padding: 23px 56px;
 }
 
+.services-item a:hover,
+.services-item a:focus {
+    color: #81b3d2;
+}
+
+.services-item a:active {
+    color: #1b748d;
+}
 .attractions-list {
     display: flex;
 }
@@ -317,7 +338,7 @@ ul {
     padding-bottom: 34px;
 }
 
-.registration a {
+.switcher-form-btn {
     display: block;
     font-size: 21px;
     font-weight: bold;
@@ -332,11 +353,12 @@ ul {
     transition: 0.3s;
 }
 
-.registration a:hover {
+.switcher-form-btn:hover,
+.switcher-form-btn:focus {
     background-color: #604e43;
 }
 
-.registration a:active {
+.switcher-form-btn:active {
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.3);
 }
@@ -363,12 +385,12 @@ ul {
     font-weight: bold;
     overflow: hidden;
     padding: 57px 55px;
-    top: 0;
+    top: -410px;
     transition: 0.7s;
 }
 
 .opened {
-    top: -400px;
+    top: 0;
 }
 
 .date-field {
@@ -387,6 +409,16 @@ ul {
     padding: 11px 45px 11px 10px;
     flex-basis: 75%;
     margin-left: auto;
+    outline: none;
+}
+
+.date-field input:hover {
+    background-color: #ebebeb;
+}
+
+.date-field input:focus {
+    background-color: #fff;
+    outline: 2px solid #e5e5e5;
 }
 
 .calendr-date-into,
@@ -399,15 +431,15 @@ ul {
     right: 5px;
     width: 25px;
     height: 25px;
-    background: url('../img/calendar.png') no-repeat center;
     cursor: pointer;
+    background: none;
 }
 
 .counter {
     display: flex;
     margin-bottom: 55px;
     justify-content: space-between;
-        text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .counter label {
@@ -427,6 +459,16 @@ ul {
     padding: 12px 5px;
     width: 37px;
     font-weight: bold;
+    order: 2;
+}
+
+.counter input:hover {
+    background-color: #ebebeb;    
+}
+
+.counter input:focus {
+    background-color: #fff;
+    outline: 2px solid #e5e5e5;    
 }
 
 .counter button {
@@ -443,8 +485,13 @@ ul {
     transition: 0.3s;
 }
 
-.counter button:nth-child(1) {
+.counter button:nth-child(2) {
     margin-left: auto;
+    order: 1;
+}
+
+.counter button:nth-child(3) {
+    order: 3;
 }
 
 button[type=submit] {
@@ -485,7 +532,7 @@ button[type=submit]:active {
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 33px;
-    margin-right: 30px;
+    margin-right: 33px;
 }
 
 .social-list {
@@ -494,24 +541,70 @@ button[type=submit]:active {
     
 }
 
+.svg-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .social-item {
-    width: 46px;
-    height: 48px;
-    background-color: #81b3d2;
-    padding: 2px;
     margin: 3px;
 }
 
-.youtube {
+.social-item a {
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+    padding: 14px 0;
+    transition: 0.3s;
+    outline: none;
+}
+
+.social-item a:hover,
+.social-item a:focus {
+    background-color: #669ec0;
+}
+
+.social-item a:active {
+    background-color: #5496bd;
+}
+
+.social-item a:active path {
+    fill: #88b6d1;
+}
+
+.html-label path {
     fill: #000;
-    
 }
 
 .html-label {
-    height: 45px;
+    position: relative;
     width: 200px;
-    background: url('../img/html_logo.png') no-repeat center;
+    padding-top: 5px;
+    padding-left: 85px;
 }
+
+.html-label:hover path {
+    fill: #81b3d2;
+}
+
+.html-label:active path {
+    fill: #bdbbbc;
+}
+
+.html-label::before {
+    content: 'website by';
+    position: absolute;
+    font-size: 14px;
+    width: 200px;
+    height: 50px;
+    left: 0;
+    top: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
 
 
 
