@@ -97,7 +97,7 @@ ul {
 .navigation-item a {
     font-size: 14px;
     font-weight: bold;
-    line-height: 60px;
+    line-height: 56px;
     cursor: pointer;
     outline: none;
 }
@@ -580,6 +580,7 @@ button[type=submit]:active {
 .html-label {
     position: relative;
     width: 200px;
+    height: 44px;
     padding-top: 5px;
     padding-left: 85px;
 }
@@ -590,7 +591,6 @@ button[type=submit]:active {
 
 .html-label:active path {
     fill: #bdbbbc;
-    height: 53px;
 }
 
 .html-label::before {
@@ -603,7 +603,68 @@ button[type=submit]:active {
     text-transform: uppercase;
 }
 
+/*----------------------- HOTELS ---------------------------*/
 
+.select-form {
+    background: url('../img/blur_fone.jpg') no-repeat center;
+    padding: 30px 73px 21px 73px;
+}
+
+.non-absolute {
+    position: relative;
+}
+
+.properties-list {
+    display: flex;
+}
+
+.properties-list .properties-item:nth-child(1) {
+    margin-right: 11%;
+}
+
+.properties-list .properties-item:last-child {
+    margin-left: auto;
+}
+
+.properties-item span {
+    display: block;
+    padding-bottom: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.properties-item label {
+    position: relative;
+    display: block;
+    padding: 10px 0 20px 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff
+}
+
+.properties-item li:last-child label {
+    padding-bottom: 0;
+}
+
+.properties-item input[type="checkbox"]:checked ~ label::before,
+.properties-item input[type="checkbox"] ~ label::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.properties-item input[type="checkbox"]:checked ~ label::before {
+    background: url('../img/checkbox-on.png') no-repeat center;
+}
+
+.properties-item input[type="checkbox"] ~ label::before {
+    background: url('../img/checkbox-off.png') no-repeat center;
+}
 
 
 

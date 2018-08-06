@@ -13,7 +13,9 @@
    <div class="wrapper container">
     <header class="page-header container">
         <div class="logo">
+           <a href="index.html">
             <img src="img/logo.png" width="" height="" alt="логотип компании">
+           </a>
         </div>
         <nav class="page-navigation">
             <ul class="navigation-list-left">
@@ -42,128 +44,39 @@
             </ul>
         </nav>
     </header>
+    
     <main class="page-content">
-        <section class="tagline-images">
-            <h2 class="visually-hidden">визитный баннер сайта</h2>
-            <div class="intro">
-                <div class="intro-text"></div>
-                <div class="mask"></div>
-            </div>
-            <span class="tagline-text">
-                Седона — небольшой городок в Аризоне,<br>заслуживающий большего!
-            </span>
+        <section class="select-form">
+           <h2 class="visually-hidden">выбор условий проживания</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <ul class="properties-list">
+                    <li class="properties-item">
+                        <span>инфраструктура:</span>
+                        <ul class="infrastructure">
+                            <li class="infrastructure-item"><input class="visually-hidden" type="checkbox" checked name="pool" id="pool" value="pool"><label for="pool">Бассеин</label></li>
+                            <li class="infrastructure-item"><input class="visually-hidden" type="checkbox" name="pool" id="parking" value="parking"><label for="parking">Парковка</label></li>
+                            <li class="infrastructure-item"><input class="visually-hidden" type="checkbox" name="wifi" id="wifi" value="wifi"><label for="wifi">WI-FI</label></li>
+                        </ul>
+                    </li>
+                    <li class="properties-item">
+                        <span>тип жилья:</span>
+                        <ul class="infrastructure">
+                            <li class="accommodation-item"><input class="visually-hidden" type="checkbox" checked name="hotel" id="hotel" value="hotel"><label for="hotel">Гостиница</label></li>
+                            <li class="accommodation-item"><input class="visually-hidden" type="checkbox" checked name="motel" id="motel" value="motel"><label for="motel">Мотель</label></li>
+                            <li class="accommodation-item"><input class="visually-hidden" type="checkbox" checked name="apartments" id="apartments" value="apartments"><label for="apartments">Аппартаменты</label></li>
+                        </ul>
+                    </li>
+                    <li class="properties-item">
+                        <span>стоимость в сутки (р):</span>
+                    </li>
+                </ul>
+            </form>
         </section>
-        <section class="attractions">
-            <h2 class="visually-hidden">наши преимущества перед другими</h2>
-            <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
-            <div class="image-line">
-                <div class="image-line-text">
-                    <b>настоящий<br>городок</b>
-                    <span>- №1 -</span>
-                    <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                </div>
-                <div class="image-line-town"></div>
-            </div>
-            <ul class="services-list">
-                <li class="services-item">
-                    <a href="#">
-                        жильё
-                        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a href="#">
-                        еда
-                        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a href="#">
-                        сувениры
-                        <p>Не только китайского, но и местного производства!</p>
-                    </a>
-                </li>
-            </ul>
-            <div class="image-line">
-                <div class="image-line-town right-layer"></div>
-                <div class="image-line-text">
-                    <b>Там есть<br>Мост дьявола</b>
-                    <span>- №2 -</span>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                </div>
-            </div>
-            <ul class="attractions-list">
-                <li class="attractions-item">
-                    <div class="image-line-text">
-                        <b>Небольшая<br>площадь</b>
-                        <span>- №3 -</span>
-                        <p>Все достопримечательности<br>находятся очень близко</p>
-                    </div>
-                </li>
-                <li class="attractions-item">
-                    <div class="image-line-text">
-                        <b>Красивая<br>дорога</b>
-                        <span>- №4 -</span>
-                        <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
-                    </div>
-                </li>
-                <li class="attractions-item">
-                    <div class="image-line-text">
-                        <b>Мало<br>туристов</b>
-                        <span>- №5 -</span>
-                        <p>Большинство едет в гранд каньон<br>и толпится там</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2 class="visually-hidden">форма регистрации</h2>
-            <div class="registration">
-                <b>Заинтересовались?</b>
-                <p>
-                    Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
-                </p>
-                <a class="switcher-form-btn" href="#">поиск гостиницы в седоне</a>
-            </div>
-        </section>
-        <section class="map">
-                <form class="hotel-find-form" action="https://echo.htmlacademy.ru" method="post" name="hotelSearching">
-                    <label class="date-field">
-                        дата заезда:
-                        <input type="text" required name="dateInto" value="01 НОЯБРЯ 2018">
-                        <button type="button" class="calendr-date-into">
-                            <svg>
-                                <image fill="red" id="calendar" width="21" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAWCAQAAACFih+zAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCAMKGTrlBgF6AAABbklEQVQoz4XSz0tUYRTG8c/EDROn7iC4cpNtbHcJnN1AuShc5qqF4qrNLIQEEVolbQIJsr8g+uEiGDAQRGjj4G7GxUWlEKIUDAQJ7mLIcNXCd2aIOzHP5jzveb+c95zDW2gImrPsFhhzaNwP8N1y+d0lcKVNGjYcXOyqOJdVaFStKOqnlqVCo+WzOu6a8hSMWvTST/DCVri9Hxny1icwaRUkFq1JwTP18irNIw+jzhPrfgX31RNfgp+30wa66LH3wV143cl+KHdsdwN91UVnpFIT+Ci1iQmptDmTb2BEgiLGJUooSjCSRzcc4QALYr9xYBr7eXRAKZyvK4kQKWEgjz7wCpNOPZc4VnPbGyy0F9dFT9SRYVfmFJk6TvJVa2rBPQ4xdY9ee63KZCrYkdlDRSZrVnuNFXfGit1AJO491pptfMMjgy6w6w7hh/2DnjkL7jDElrR3r30VOTfr5v+B5mWoOC805q241rfkH0t/AVNaXNyNsA9vAAAAAElFTkSuQmCC"/>
-                            </svg>
-                        </button>
-                    </label>
-                    <label class="date-field">
-                        дата выезда:
-                        <input type="text" required name="dateOut" value="30 НОЯБРЯ 2018">
-                        <button type="button" class="calendr-date-out"></button>
-                    </label>
-                    <div class="counter">
-                        <label>
-                            взрослые:
-                            <input type="text" required id="adults" value="2" name="adults" placeholder="2">
-                            <button type="button" id="minusAdults">-</button>
-                            <button type="button" id="plusAdults">+</button>
-                        </label>
-                        <label>
-                            дети:
-                            <input type="text" required id="children" value="0" name="children" placeholder="0">
-                            <button type="button" id="minusChildren">-</button>
-                            <button type="button" id="plusChildren">+</button>
-                        </label>
-                    </div>
-                    <button type="submit">найти</button>
-                </form>
-            <h2 class="visually-hidden">карта</h2>
-            <img src="img/map.jpg" width="1200" height="593" alt="карта">
-            <iframe class="interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22020.240398484842!2d-111.77358161245253!3d34.87310100191369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1533203319899" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </section>
+    
+    
     </main>
-    <footer class="page-footer">
+       
+    <footer class="page-footer non-absolute">
         <span>#visitsedona</span>
         <ul class="social-list">
             <li class="social-item">
@@ -206,3 +119,5 @@
 
 
 </html>
+    
+   
