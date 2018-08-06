@@ -120,7 +120,7 @@ ul {
 .intro {
     background: url('../img/intro_layer_background.jpg') no-repeat center;
     background-size:100%;
-    background-position-y: -86px;
+    background-position-y: -220px;
     height: 500px;
     position: relative;
     margin-bottom: 64px;
@@ -191,7 +191,7 @@ ul {
 
 }
 
-.image-line-text d {
+.image-line-text b {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
@@ -216,7 +216,6 @@ ul {
     font-weight: 400;
     text-transform: uppercase;
     margin: 0 45px;
-    margin-bottom: 10px;
 }
 
 .image-line-town {
@@ -533,6 +532,7 @@ button[type=submit]:active {
     text-transform: uppercase;
     margin-left: 33px;
     margin-right: 33px;
+/*    align-self: center;*/
 }
 
 .social-list {
@@ -590,14 +590,13 @@ button[type=submit]:active {
 
 .html-label:active path {
     fill: #bdbbbc;
+    height: 53px;
 }
 
 .html-label::before {
     content: 'website by';
     position: absolute;
     font-size: 14px;
-    width: 200px;
-    height: 50px;
     left: 0;
     top: 15px;
     font-weight: 400;
