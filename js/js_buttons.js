@@ -1,4 +1,15 @@
+//---------------  размер inputa  ---------------------
+
+$('.min-max-value input').on('keyup input', function(){
+    var ii = this.value.length;
+    if (ii <= 0) {ii=1;}
+    if (ii > 5) {ii=5;}
+    $(this).css('width', ii*10+'px');
+});
+
+
 //---------------   изменение фона у родителя  ---------------------
+
 $('.services-item a').on('focus', function(){
    $(this).css('background-color', 'rgba(129, 179, 210, 0.34)');
 });
