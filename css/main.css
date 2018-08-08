@@ -31,7 +31,7 @@ body {
     color: #000;  
 }
 
-.wrapper {
+.shadow-block {
     background-color: #fff;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.33);
 }
@@ -60,6 +60,12 @@ ul {
 .page {
     display: block;
     background-color: #f2f2f2;
+}
+
+.wrapper {
+    max-width: 1056px;
+    min-width: 678px;
+    margin: 0 5.8%;
 }
 
 .logo {
@@ -607,7 +613,9 @@ button[type=submit]:active {
 
 .select-form {
     background: url('../img/blur_fone.jpg') no-repeat center;
-    padding: 27px 73px 7px 58px;
+/*    padding: 30px 73px 17px 58px;*/
+    padding-top: 30px;
+    padding-bottom: 17px;
 }
 
 .non-absolute {
@@ -619,20 +627,25 @@ button[type=submit]:active {
 }
 
 .properties-list .properties-item:nth-child(1) {
-    margin-right: 8.5%;
+    margin-right: 11.1%;
 }
 
 .properties-list .properties-item:last-child {
     margin-left: auto;
 }
 
+.properties-item label {
+    cursor: pointer;
+}
+
 .properties-item fieldset {
+    padding: 0;
     border: none;
 }
 
 .properties-item legend {
     display: block;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -656,7 +669,7 @@ button[type=submit]:active {
 .properties-item input[type="checkbox"] ~ label::before {
     content: '';
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 3px;
     width: 30px;
     height: 30px;
@@ -751,6 +764,7 @@ button[type=submit]:active {
 .min-max-value {
     display: flex;
     position: relative;
+    margin-top: -8px;
     justify-content: space-between;
     border: 2px solid #ffffff;
     border-radius: 3px;
@@ -769,7 +783,7 @@ button[type=submit]:active {
 .min-value,
 .max-value {
     display: flex;
-    padding: 6px 0;
+    padding: 9px 0;
     align-self: center;
 }
 
@@ -811,5 +825,47 @@ button[type=submit]:active {
     font-size: 14px;
 }
 
+.select-field {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
 
+.left-group {
+    display: flex;
+}
 
+.count-find {
+    font-size: 21px;
+    font-weight: bold;
+
+}
+
+.sorted-list {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.sorted-list ul {
+    display: flex;
+    align-items: center;
+}
+
+.sorted-list li {
+    padding: 0 15px;
+}
+
+.sorted-list li:first-child {
+    margin-left: 30px;
+}
+
+.arrow-list {
+    display: inherit;
+}
+
+.arrow-list {
+    color: rgba(255, 255, 255, 0);
+}

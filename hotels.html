@@ -10,7 +10,7 @@
 </head>
 
 <body class="page borders">
-    <div class="wrapper container">
+    <div class="shadow-block container">
         <header class="page-header container">
             <div class="logo">
                 <a href="index.html">
@@ -47,6 +47,7 @@
 
         <main class="page-content">
             <section class="select-form">
+               <div class="wrapper">
                 <h2 class="visually-hidden">выбор условий проживания</h2>
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <ul class="properties-list">
@@ -91,14 +92,32 @@
                                     </div>
                                 </div>
                                 <a class="button" href="#">показать</a>
-                                
                             </fieldset>
 
                         </li>
                     </ul>
                 </form>
+                </div>
             </section>
-
+            <section class="select-field wrapper">
+                <h2 class="visually-hidden">поле выбора</h2>
+                <div class="left-group">
+                <b class="count-find">найдено: 3</b>
+                <div class="sorted-list">
+                   сортировка
+                    <ul>
+                        <li><a href="#">по цене</a></li>
+                        <li><a href="#">по типу</a></li>
+                        <li><a href="#">по рейтингу</a></li>
+                    </ul>
+                </div>
+                </div>
+                <ul class="arrow-list">
+                    <li class="arrow-up"><a href="#">up</a></li>
+                    <li class="arrow-down"><a href="#">down</a></li>
+                </ul>
+            
+            </section>
 
         </main>
         <footer class="page-footer non-absolute">
