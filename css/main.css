@@ -32,6 +32,9 @@ body {
 }
 
 .shadow-block {
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.33);
 }
@@ -58,8 +61,13 @@ ul {
 }
 
 .page {
+    position: relative;
     display: block;
     background-color: #f2f2f2;
+}
+
+.page-header {
+    padding: 0 6%;
 }
 
 .wrapper {
@@ -75,29 +83,43 @@ ul {
     z-index: 2;
 }
 
+.logo a {
+    transition: 0.3s;
+}
+
+.logo a:hover img {
+    transition: 0.3s;
+}
+
+.logo a:hover,
+.logo a:focus {
+    opacity: 0.8;
+    outline: none;
+}
+
+.logo a:hover img,
+.logo a:focus img {
+    transform: scale(1.2);
+}
+
 .page-navigation {
-    display: flex;
-    justify-content: space-between;
     background-color: #fff;
-    padding: 0 6%;
 }
 
-.navigation-list-left,
-.navigation-list-right {
+.navigation-list {
     display: flex;
-    flex-grow: 1;
 }
 
-.navigation-list-right {
-    justify-content: flex-end;
+.navigation-item:first-child {
+    margin-right: 14%;
 }
 
-.navigation-list-left .navigation-item:nth-child(1){
-    margin-right: 27%;
+.navigation-item:nth-child(3) {
+    margin-left: auto;
 }
 
-.navigation-list-right .navigation-item:nth-child(2){
-    margin-left: 32%;
+.navigation-item:last-child {
+    margin-left: 15%;
 }
 
 .navigation-item a {
@@ -118,57 +140,41 @@ ul {
     opacity: 0.3;
 }
 
-.tagline-images {
-    margin-bottom: 32px;
-/*    min-width: 890px;*/
+.promo {
+    padding: 10px auto;
 }
 
-.intro {
-    background: url('../img/intro_layer_background.jpg') no-repeat center;
-    background-size:100%;
-    background-position-y: -220px;
-    height: 500px;
+.background-photo {
     position: relative;
-    margin-bottom: 64px;
-    transition: 1s;
+    background: url('../img/intro_layer_background.jpg') no-repeat center;
+    background-position-y : -215px;
+    transition: 0.5s;
+    display: flex;
+    background-size: 100%;
+    padding-top: 76px;
+    padding-bottom: 80px;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
-.intro:hover {
-    background-size: 104%;
-}
-
-.intro-text {
-    background: url('../img/sedona_header.png');
-    background-repeat: no-repeat;
-    background-size:contain;
-    height: 500px;
+.background-photo::after {
     position: absolute;
-    top: 72px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 458px;
-    height:352px;
-    
-}
-
-.mask {
-    position: absolute;
-    background: url('../img/layer_mask.png') no-repeat center;
-    background-size: 100% 100%;
-    display: block;
-    height: 57px;
-    bottom: 0;
+    content: '';
     width: 100%;
+    background: url('../img/layer_mask.png') no-repeat center;
+    background-size: 100% 57px;
+    bottom: 0;
+    height: 57px;
 }
 
-.tagline-text {
-    display: block;
-    padding: 0;
+.promo-text {
+    text-transform: uppercase;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    text-transform: uppercase;
     text-align: center;
+    margin: 0 30%;
+    min-width: 550px;
 }
 
 .attractions span {
@@ -433,11 +439,33 @@ ul {
     position: absolute;
     display: block;
     top: 6px;
-    right: 5px;
+    right: 15px;
     width: 25px;
     height: 25px;
     cursor: pointer;
     background: none;
+    opacity: 0.4;
+}
+
+.calendr-date-into svg path {
+    fill: black;
+}
+
+.calendr-date-into svg rect {
+    fill: black;
+}
+
+.calendr-date-into:hover,
+.calendr-date-into:focus {
+    opacity: 1;
+}
+
+.calendr-date-into:active svg path {
+    fill: #81b3d2;
+}
+
+.calendr-date-into:active svg rect {
+    fill: #81b3d2;
 }
 
 .counter {
@@ -529,7 +557,7 @@ button[type=submit]:active {
     background-color: rgba(255, 255, 255, 0.71);
 }
 
-.page-footer span {
+.page-footer p {
     padding: 0;
     margin: 0;
     font-size: 21px;
@@ -663,7 +691,8 @@ button[type=submit]:active {
     padding: 10px 0 20px 40px;
     font-size: 14px;
     text-transform: uppercase;
-    color: #ffffff
+    color: #ffffff;
+    transition: 0.3s;
 }
 
 .properties-item li:last-child label {
@@ -686,6 +715,11 @@ button[type=submit]:active {
 
 .properties-item input[type="checkbox"] ~ label::before {
     background: url('../img/checkbox-off.png') no-repeat center;
+}
+
+.properties-item input[type="checkbox"]:hover ~ label,
+.properties-item input[type="checkbox"]:focus ~ label {
+    margin-left: 10px;
 }
 
 /*------------------- TOGGLE MODUL ---------------------*/
@@ -830,7 +864,8 @@ button[type=submit]:active {
     font-size: 14px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     background-color: #fff;
     color: #000;
 }
@@ -869,12 +904,26 @@ button[type=submit]:active {
 }
 
 .sorted-list a {
-    text-decoration: underline;
+    color: #95bfd8;
+    outline: none;
+    border-bottom: 1px dotted #95bfd8;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.sorted-list a:hover,
+.sorted-list a:focus {
+    opacity: 1;
+    border-bottom: 1px dotted rgb(0, 0, 0);
+}
+
+.sorted-list a:active {
+     color: #000;
 }
 
 .sorted-list .actived  {
     color: #95bfd8;
-    text-decoration:none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0);
 }
 
 .sorted-list li:first-child {
@@ -956,49 +1005,42 @@ button[type=submit]:active {
 }
 
 .buttons-item {
-    background-color: #81b3d2;
     width: 110px;
     text-align: center;
     margin-right: 10px;
 }
 
 .buttons-item a {
+    background-color: #81b3d2;
+    padding: 5px 17px;
     outline: none;
-}
-
-
-.buttons-item:hover,
-.buttons-item:focus {
-    background-color: #669ebf;
-}
-
-.buttons-item:active {
-    background-color: #5596be;
-}
-
-.buttons-item:active a {
-    opacity: 0.3;
-}
-
-.brown {
-    background-color: #766357;
-    width: 145px;
-}
-
-.brown:hover,
-.brown:focus {
-    background-color: #604e44;
-}
-
-.brown:active {
-    background-color: #503e32;
-}
-
-.buttons-item a {
     font-size: 14px;
     line-height: 28px;
     color: #fff;
     font-weight: bold;
+}
+
+
+.buttons-item a:hover,
+.buttons-item a:focus {
+    background-color: #669ebf;
+}
+
+.buttons-item a:active {
+    background-color: #5596be;
+}
+
+.buttons-item:active a {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.buttons-item .brown {
+    background-color: #766257;
+}
+
+.buttons-item .brown:hover,
+.buttons-item .brown:focus {
+    background-color: #604e44;
 }
 
 .stars {
