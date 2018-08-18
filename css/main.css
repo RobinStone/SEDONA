@@ -1,6 +1,6 @@
 .borders {
     outline: 1px solid black;
-    background-color: red;
+/*    background-color: red;*/
 }
 
 html {
@@ -32,6 +32,7 @@ body {
 }
 
 .shadow-block {
+    position: relative;
     max-width: 1200px;
     min-width: 768px;
     margin: 0 auto;
@@ -141,7 +142,7 @@ ul {
 }
 
 .promo {
-    padding: 10px auto;
+    margin-bottom: 33px;
 }
 
 .background-photo {
@@ -155,6 +156,10 @@ ul {
     padding-bottom: 80px;
     justify-content: center;
     margin-bottom: 60px;
+}
+
+.background-photo:hover {
+    background-size: 105%;
 }
 
 .background-photo::after {
@@ -173,96 +178,129 @@ ul {
     line-height: 26px;
     font-weight: bold;
     text-align: center;
-    margin: 0 30%;
+    margin: 0 24%;
     min-width: 550px;
 }
 
-.attractions span {
+.reasons > p {
     display: block;
     color: #333;
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
 }
 
-.image-line {
+.reason-list {
     display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.image-line-text {
+.reason-item{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reason-item-info {
     text-align: center;
     background-color: #81b3d2;
     width: 33.333%;
-    padding: 50px 10px;
+    padding: 25px 10px 62px;
     color: #fff;
     min-width: 256px;
 
 }
 
-.image-line-text b {
+.reason-item-info p:first-child {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
     text-transform: uppercase;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
 }
 
-.image-line-text span {
+.reason-item-info p:nth-child(2) {
     font-size: 14px;
     padding: 0;
     margin: 0;
-    color: #fff;
     line-height: 21px;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-.image-line-text p {
+.reason-item-info p:last-child {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 0 45px;
+    margin: 0 36px;
 }
 
-.image-line-town {
+.image-wraper {
     overflow: hidden;
     flex-grow: 1;
+}
+
+.image-wraper:hover {
+    background-size:105%;
+}
+
+.sedona {
     background: url('../img/image_line_1.jpg') no-repeat center;
     background-size:100%;
     transition: 1s;
 }
 
-.right-layer {
-    overflow: hidden;
-    flex-grow: 1;
+.brige {
     background: url('../img/brige.jpg') no-repeat center;
     background-size:100%;
     transition: 1s;
 }
 
-.image-line-town:hover,
-.right-layer:hover {
-    background-size:110%;
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.gray p:first-child {
+    color: #000;
+}
+
+.gray {
+    background-color: #eee;
+    color: #333;
+    width: 100%;
+}
+
+.gray p:first-child {
+    padding: 0 29%;
+}
+
+.gray p:last-child {
+    padding: 0 4%;
+}
+
+.big {
+    flex-basis: 100%;
+}
+
+.litle {
+    width: 33.33%;
 }
 
 .services-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
 }
 
 .services-item {
+    text-transform: uppercase;
     text-align: center;
     width: 33.333%;
-}
-
-.services-item a {
     display: block;
     cursor: pointer;
     text-align: center;
@@ -273,17 +311,17 @@ ul {
     transition: 0.3s;
 }
 
-.services-list li:nth-child(1) a {
+.home {
     background: url('../img/icon-1.png') no-repeat center;
     background-position: 50% 60px;
 }
 
-.services-list li:nth-child(2) a {
+.food {
     background: url('../img/icon-2.png') no-repeat center;
     background-position: 50% 60px;
 }
 
-.services-list li:nth-child(3) a {
+.souvenirs {
     background: url('../img/icon-3.png') no-repeat center;
     background-position: 50% 60px;
 }
@@ -297,82 +335,7 @@ ul {
     padding: 23px 56px;
 }
 
-.services-item a:hover,
-.services-item a:focus {
-    color: #81b3d2;
-}
 
-.services-item a:active {
-    color: #1b748d;
-}
-.attractions-list {
-    display: flex;
-}
-
-.attractions-list .image-line-text {
-    width: auto;
-}
-
-.attractions-item .image-line-text {
-    background-color: #eee;
-    color: #333;
-}
-
-.attractions-item {
-    width: 33.333%
-}
-
-.attractions-item .image-line-text span {
-    color: #333;
-}
-
-.registration {
-    position: relative;
-    background-color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    color: #333;
-    font-size: 14px;
-    line-height: 24px;
-    padding-top: 60px;
-    z-index: 2;
-}
-
-.registration b {
-    font-size: 30px;
-    color: #000;
-    padding-top: 10px;
-}
-
-.registration p {
-    padding: 15px;
-    padding-bottom: 34px;
-}
-
-.switcher-form-btn {
-    display: block;
-    font-size: 21px;
-    font-weight: bold;
-    text-align: center;
-    width: 47%;
-    bottom: 0;
-    left: 20px;
-    margin: 0 auto;
-    padding: 30px 0;
-    color: #fff;
-    background-color: #766357;
-    transition: 0.3s;
-}
-
-.switcher-form-btn:hover,
-.switcher-form-btn:focus {
-    background-color: #604e43;
-}
-
-.switcher-form-btn:active {
-    background-color: #503e33;
-    color: rgba(255, 255, 255, 0.3);
-}
 
 .map {
     position: relative;
@@ -550,8 +513,8 @@ button[type=submit]:active {
 .page-footer {
     display: flex;
     position: absolute;
-    width: 100%;
     bottom: 0;
+    width: 100%;
     justify-content: space-between;
     padding: 32px 100px;
     background-color: rgba(255, 255, 255, 0.71);
