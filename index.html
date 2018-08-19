@@ -118,10 +118,33 @@
                 <p>
                     Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
-                <button type="button">поиск гостиницы в седоне</button>
+                <button type="button" class="search-button">поиск гостиницы в седоне</button>
             </div>
-                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-
+                <form class="search-form not-visible" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="data-enter">
+                        дата заезда:
+                        <input type="text" class="data-input" required value="24 апреля 2017" name="enter">
+                        <button type="button" class="calendar"></button>
+                    </label>
+                    <label class="data-out">
+                        дата выезда:
+                        <input type="text" class="data-input" required value="24 апреля 2017" name="out">
+                        <button type="button" class="calendar"></button>
+                    </label>
+                    <label class="adults">
+                        взрослые:
+                        <button type="button" class="value-button">-</button>
+                        <input type="text" class="count-input" required value="2" name="adults">
+                        <button type="button" class="value-button">+</button>
+                    </label>
+                    <label class="children">
+                        дети:
+                        <button type="button" class="value-button">-</button>
+                        <input type="text" class="count-input" required value="0" name="childrens">
+                        <button type="button" class="value-button">+</button>
+                    </label>
+                    
+                    <button type="submit" class="search-btn">найти</button>
                 </form>
         </section>
         

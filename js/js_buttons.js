@@ -23,9 +23,9 @@ $('.map img').css('display', 'none');
 
 //---------------   поиск гостиницы в седоне . кнопка -------------- 
 
-$('.switcher-form-btn').on('click', function(evt){
+$('.search-button').on('click', function(evt){
     evt.preventDefault();
-    $('.hotel-find-form').toggleClass('opened');
+    $('.search-form').toggleClass('not-visible');
 });
 
 //---------------   кнопки в popap --------------------------------- 

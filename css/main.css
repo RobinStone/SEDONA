@@ -208,7 +208,7 @@ ul {
     text-align: center;
     background-color: #81b3d2;
     width: 33.333%;
-    padding: 25px 10px 60px;
+    padding: 25px 10px 56px;
     color: #fff;
     min-width: 256px;
 
@@ -294,7 +294,7 @@ ul {
 .services-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 56px;
+    padding-bottom: 62px;
 }
 
 .services-item {
@@ -348,7 +348,7 @@ ul {
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    padding-top: 22px;
+    padding-top: 26px;
     z-index:10;
 }
 
@@ -369,7 +369,7 @@ ul {
     padding-bottom: 31px;
 }
 
-.search button {
+.search-button {
     width: 100%;
     font-size: 21px;
     font-weight: bold;
@@ -377,27 +377,113 @@ ul {
     border: none;
     background-color: #766357;
     padding: 31px 0;
+    cursor: pointer;
 }
 
 .search-form {
     position: absolute;
     display: flex;
+    top: 290px;
     flex-wrap: wrap;
-    background-color: green;
+    background-color: #fff;
     left: 50%;
     transform: translateX(-50%);
-    height: 450px;
-    width: 47.3%;
-    bottom: -450px;
+    width: 47.5%;
     margin: 0;
-    z-index: 2;
+    z-index: 5;
+    padding: 58px 57px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.6s;
 }
 
+.not-visible {
+    top: 0;
+    padding: 0 57px;
+    opacity: 0;
+}
 
+.data-enter,
+.data-out {
+    position: relative;
+    display: flex;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    line-height: 38px;
+    margin-bottom: 30px;
+}
 
+.data-input {
+    margin-left: auto;
+    width: 76%;
+    border: none;
+    height: 38px;
+    background-color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 15px;
+}
 
+.count-input {
+    width: 38px;
+    border: none;
+    height: 38px;
+    background-color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 15px;
+    appearance: none;
+}
 
+.value-button {
+    width: 41px;
+    border: none;
+    height: 38px;
+    background-color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 0 15px;
+    appearance: none;
+}
 
+.adults,
+.children {
+    display: flex;
+    flex-basis: 50%;
+    text-transform: uppercase;
+    line-height: 38px;
+    margin-bottom: 56px;
+}
+
+.adults button:first-child,
+.children button:first-child {
+    margin-left: auto;
+}
+
+.children {
+    padding-left: 50px;
+}
+
+.calendar {
+    position: absolute;
+    width: 38px;
+    height: 100%;
+    right: 0px;
+}
+
+.search-btn {
+    flex-basis: 100%;
+    background-color: #81b3d2;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
+    border: none;
+    padding: 17px;
+    color: #fff;
+}
 
 
 
