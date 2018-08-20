@@ -378,6 +378,17 @@ ul {
     background-color: #766357;
     padding: 31px 0;
     cursor: pointer;
+    transition: 0.4s;
+    color: #fff;
+}
+
+.search-button:hover,
+.search-button:focus {
+    background-color: #604e43;
+
+}.search-button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .search-form {
@@ -422,7 +433,7 @@ ul {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    padding: 0 15px;
+    padding: 0 40px 0 15px;
 }
 
 .count-input {
@@ -434,7 +445,18 @@ ul {
     font-size: 14px;
     font-weight: bold;
     padding: 0 15px;
-    appearance: none;
+    outline: none;
+}
+
+.data-input:hover,
+.count-input:hover {
+    background-color: #ebebeb;
+}
+
+.data-input:focus,
+.count-input:focus {
+    background-color: #fff;
+    outline: 2px solid #f2f2f2;
 }
 
 .value-button {
@@ -447,6 +469,17 @@ ul {
     font-weight: bold;
     padding: 0 15px;
     appearance: none;
+    color: rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.value-button:hover,
+.value-button:focus {
+    color: #000;
+}
+
+.value-button:active {
+    color: #81b3d2;
 }
 
 .adults,
@@ -469,9 +502,28 @@ ul {
 
 .calendar {
     position: absolute;
-    width: 38px;
-    height: 100%;
-    right: 0px;
+    top: 7px;
+    width: 28px;
+    height: 25px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: red;
+    outline: none;
+}
+
+.calendar svg {
+    fill: rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+
+.calendar:hover svg,
+.calendar:focus svg {
+    fill: rgb(0, 0, 0);
+}
+
+.calendar:active svg {
+    fill: #81b3d2;
 }
 
 .search-btn {
@@ -483,10 +535,17 @@ ul {
     border: none;
     padding: 17px;
     color: #fff;
+    transition: 0.3s;
 }
 
+.search-btn:hover,
+.search-btn:focus {
+    background-color: #669ec0;
 
-
+}.search-btn:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
 
 .map {
     position: relative;
@@ -559,6 +618,7 @@ ul {
 
 .html-label path {
     fill: #000;
+    transition: 0.4s;
 }
 
 .html-label {
@@ -567,9 +627,11 @@ ul {
     height: 44px;
     padding-top: 5px;
     padding-left: 85px;
+    outline: none;
 }
 
-.html-label:hover path {
+.html-label:hover path,
+.html-label:focus path {
     fill: #81b3d2;
 }
 
