@@ -979,7 +979,6 @@ ul {
 
 .result-list {
     border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-list h3 {
@@ -1003,6 +1002,7 @@ ul {
 .hotel-item {
     display: flex;
     padding: 30px 6%;
+    border-bottom: 1px solid #e5e5e5;    
 }
 
 .hotel-item img {
