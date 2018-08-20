@@ -11,43 +11,40 @@
 
 <body class="page borders">
     <div class="shadow-block container">
-        <header class="page-header container">
-            <div class="logo">
-                <a href="index.html">
-            <img src="img/logo.png" width="" height="" alt="логотип компании">
-           </a>
-            </div>
-            <nav class="page-navigation">
-                <ul class="navigation-list-left">
-                    <li class="navigation-item">
-                        <a href="#">
+        <header class="page-header">
+        <nav class="page-navigation">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" width="138" height="70" alt="логотип компании">
+            </a>
+        </div>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="#">
                         информация
                     </a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="#">
+                </li>
+                <li class="navigation-item">
+                    <a href="#">
                         фото и видео
                     </a>
-                    </li>
-                </ul>
-                <ul class="navigation-list-right">
-                    <li class="navigation-item">
-                        <a href="#">
+                </li>
+                <li class="navigation-item">
+                    <a href="#">
                         карта штата
                     </a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="current">
+                </li>
+                <li class="navigation-item">
+                    <a class="current">
                         гостиницы
                     </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <main class="page-content">
+       <main class="page-content">
             <section class="select-form">
-                <div class="wrapper">
                     <h2 class="visually-hidden">выбор условий проживания</h2>
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <ul class="properties-list">
@@ -77,11 +74,11 @@
                                     <ul class="min-max-value">
                                         <li class="min-value">
                                             <label for="from">от</label>
-                                            <input name="cash-min" id="from" value="0">
+                                            <input name="cash-min" id="from" value="0" autocomplete="off">
                                         </li>
                                         <li class="max-value">
                                             <label for="to">до</label>
-                                            <input name="cash-max" id="to" value="3000">
+                                            <input name="cash-max" id="to" value="3000"  autocomplete="off">
                                         </li>
                                     </ul>
                                     <div class="toggle-modul">
@@ -91,139 +88,114 @@
                                             <div class="toggle-max" tabindex="0"></div>
                                         </div>
                                     </div>
-                                    <a class="button" href="#">показать</a>
+                                    <button type="submit" class="button" href="#">показать</button>
                                 </fieldset>
-
                             </li>
                         </ul>
                     </form>
-                </div>
             </section>
-            <section class="select-field wrapper">
+            <section class="select-field">
                 <h2 class="visually-hidden">поле выбора</h2>
-                <div class="left-group">
                     <b class="count-find">найдено: 3</b>
-                    <div class="sorted-list">
-                        сортировка
-                        <ul>
-                            <li><a class="actived" href="#">по цене</a></li>
-                            <li><a href="#">по типу</a></li>
-                            <li><a href="#">по рейтингу</a></li>
+                        <span>сортировка</span>
+                        <ul class="user-sort">
+                            <li><a class="active" href="#" rel="nofollow">по цене</a></li>
+                            <li><a href="#"  rel="nofollow">по типу</a></li>
+                            <li><a href="#"  rel="nofollow">по рейтингу</a></li>
                         </ul>
-                    </div>
-                </div>
                 <ul class="arrow-list">
-                    <li class="arrow-up">
-                        <a href="#">
-                            <svg>
-                                <image id="icon-up-dir" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAQAAADI+WwIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCAgMLiUrhVcIAAAAfklEQVQI12XNIRKCYABE4Q9Gg4VmwuZoMVPkLHgGvYBGPYdnUcNPt2A0miwGAwaBYXQ37Zs3s2rfhjgcQ9yuWJuVQtGOqAblSCV1N89e6OyNFBPrnl2O3STgaZo9WnvbQBK7xi5nrgbd9dsiq2IcepChPVHInfwmj8LZ8g9fPoShIvvsadaKAAAAAElFTkSuQmCC"/>
+                    <li>
+                        <a class="arrow-up" href="#" rel="nofollow">
+                            <svg version="1.1" id="arrow-up" xmlns: x="0px" y="0px"
+                                     width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                                    <polyline fill="#000" points="5.5,0 0,10 11,10 "/>
                             </svg>
                         </a></li>
-                    <li class="arrow-down">
-                        <a href="#">
-                            <svg>
-                                <image id="icon-down-dir" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAMAAABVLlSxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEX///+Bs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9IAAACMCi7eAAAAFnRSTlMAxTs6rawl+/qTFfEUenkJ5ONgXwKiB2ZxmwAAAAFiS0dEFwvWmI8AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCAgMLTkUqViEAAAAQklEQVQI1z3GSQKAIAzAwOCCIiou2P8/1VLBXDI4aTm63z0MlSPgJ+Ps1QRzKGSJyria2dT7R9IhZ6rmkruR/OSyF2RvBNhmPvhHAAAAAElFTkSuQmCC"/>
+                    <li>
+                        <a class="arrow-down selected" href="#"  rel="nofollow">
+                                    <svg version="1.1" id="arrow-down" xmlns: x="0px" y="0px"
+                                     width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                                    <polyline fill="#000" points="5.5,10 0,0 11,0 "/>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </section>
-            <section class="hotels-line">
-                <div class="wrapper">
-                    <ul class="hotels-list">
-                        <li class="hotels-item">
-                            <div class="block-left">
-                                <img src="img/pic1.png" width="135" height="90" alt="Amara Resort & Spa">
-                                <div class="text-info">
-                                    <h3>Amara Resort & Spa</h3>
-                                    <ul class="type-cost">
-                                        <li>Гостиница</li>
-                                        <li>От 4000 Р.</li>
-                                    </ul>
-                                    <ul class="buttons-list">
-                                        <li class="buttons-item">
-                                            <a href="#" class="filter-button">подробнее</a>
-                                        </li>
-                                        <li class="buttons-item">
-                                            <a href="#" class="filter-button brown">забранировать</a>
-                                        </li>
-                                    </ul>
-                                </div>
+            <section class="result-list">
+            <h2 class="visually-hidden">результат сортировки отелей</h2>
+                <ul class="hotel-list">
+                    <li class="hotel-item">
+                        <img src="img/pic1.png" width="137" height="92" alt="Amara Resort & Spa">
+                        <div class="info">
+                            <a href="#"><h3>Amara Resort & Spa</h3></a>
+                            <div class="col-left">
+                                <p>гостиница</p>
+                                <a class="button-result blue">подробнее</a>
                             </div>
-                            <div class="block-right">
-                                <ul class="stars">
-                                    <li class="star"></li>
-                                    <li class="star"></li>
-                                    <li class="star"></li>
-                                    <li class="star"></li>
-                                </ul>
-                                <span>рейтинг: 8.5</span>
+                            <div class="col-right">
+                                <p>от 4000 р.</p>
+                                <a class="button-result brown">забронировать</a>
                             </div>
-                        </li>
-                        
-                        <li class="hotels-item">
-                            <div class="block-left">
-                                <img src="img/pic2.png" width="135" height="90" alt="Amara Resort & Spa">
-                                <div class="text-info">
-                                    <h3>Desert Quail Inn</h3>
-                                    <ul class="type-cost">
-                                        <li>Мотель</li>
-                                        <li>От 3000 Р.</li>
-                                    </ul>
-                                    <ul class="buttons-list">
-                                        <li class="buttons-item">
-                                            <a href="#" class="filter-button">подробнее</a>
-                                        </li>
-                                        <li class="buttons-item">
-                                            <a href="#" class="filter-button brown">забранировать</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="rating">
+                            <ul class="stars-wrapper">
+                                <li class="star"></li>
+                                <li class="star"></li>
+                                <li class="star"></li>
+                                <li class="star"></li>
+                            </ul>
+                            <p>Рейтинг: 8,5</p>
+                        </div>
+                    </li>
+                    <li class="hotel-item">
+                        <img src="img/pic2.png" width="137" height="92" alt="Amara Resort & Spa">
+                        <div class="info">
+                            <a href="#"><h3>Desert Quail Inn</h3></a>
+                            <div class="col-left">
+                                <p>мотель</p>
+                                <a class="button-result blue">подробнее</a>
                             </div>
-                            <div class="block-right">
-                                <ul class="stars">
-                                    <li class="star"></li>
-                                    <li class="star"></li>
-                                    <li class="star"></li>
-                                </ul>
-                                <span>рейтинг: 8.9</span>
+                            <div class="col-right">
+                                <p>от 3000 р.</p>
+                                <a class="button-result brown">забронировать</a>
                             </div>
-                        </li>
-                        
-                        <li class="hotels-item">
-                            <div class="block-left">
-                                <img src="img/pic3.png" width="135" height="90" alt="Amara Resort & Spa">
-                                <div class="text-info">
-                                    <h3>Villas at Poco Diablo</h3>
-                                    <ul class="type-cost">
-                                        <li>Апартаменты</li>
-                                        <li>От 2000 Р.</li>
-                                    </ul>
-                                    <ul class="buttons-list">
-                                        <li class="buttons-item">
-                                            <a href="#" class="filter-button">подробнее</a>
-                                        </li>
-                                        <li class="buttons-item">
-                                            <a href="#" class="filter-button brown">забранировать</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="rating">
+                            <ul class="stars-wrapper">
+                                <li class="star"></li>
+                                <li class="star"></li>
+                                <li class="star"></li>
+                            </ul>
+                            <p>Рейтинг: 8,9</p>
+                        </div>
+                    </li>
+                    <li class="hotel-item">
+                        <img src="img/pic3.png" width="137" height="92" alt="Amara Resort & Spa">
+                        <div class="info">
+                            <a href="#"><h3>Villas at Poco Diablo</h3></a>
+                            <div class="col-left">
+                                <p>апартаменты</p>
+                                <a class="button-result blue">подробнее</a>
                             </div>
-                            <div class="block-right">
-                                <ul class="stars">
-                                    <li class="star"></li>
-                                    <li class="star"></li>
-                                </ul>
-                                <span>рейтинг: 9.2</span>
+                            <div class="col-right">
+                                <p>от 2000 р.</p>
+                                <a class="button-result brown">забронировать</a>
                             </div>
-                        </li>
-                        
-                    </ul>
-                </div>
+                        </div>
+                        <div class="rating">
+                            <ul class="stars-wrapper">
+                                <li class="star"></li>
+                                <li class="star"></li>
+                            </ul>
+                            <p>Рейтинг: 9,2</p>
+                        </div>
+                    </li>
+                </ul>
             </section>
+            
         </main>
         <footer class="page-footer non-absolute">
-            <span>#visitsedona</span>
+            <p>#visitsedona</p>
             <ul class="social-list">
                 <li class="social-item">
                     <a class="svg-center" href="#">
